@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .sidebar , .content {
-  @apply min-h-[100vh]
+  @apply sm:min-h-[100vh]
 }
 
 .card {

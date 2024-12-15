@@ -3,7 +3,7 @@ import Contents from './Contents';
 const Layout = () => {
   return (
     <div>
-        <div className="grid grid-cols-[1fr_4fr]">
+        <div className="grid sm:grid-cols-[1fr_4fr]">
             <div className="sidebar bg-orange-100 ">
                 <SideBar/>
             </div>

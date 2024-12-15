@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const SideBar = () => {
+
   const [notebooks, setNotebooks] = useState([]);
   const [isAdding, setIsAdding] = useState(false);
   const [newNotebook, setNewNotebook] = useState("");
@@ -31,7 +32,7 @@ const SideBar = () => {
       </p>
       <div className="flex flex-col py-3 px-6 text-start">
         {notebooks.map((notebook, index) => (
-          <button key={index} className="w-full text-left py-2">
+          <button key={index} className="w-full text-left py-2 rounded-2xl p-4 hover:bg-orange-400/70 hover:font-semibold active:bg-orange-400/40 focus:outline-none focus:ring focus:ring-violet-300">
             {notebook}
           </button>
         ))}
